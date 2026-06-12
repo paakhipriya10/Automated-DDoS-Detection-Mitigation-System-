@@ -1,0 +1,14 @@
+
+
+tensorflow==2.10.1
+numpy==1.26.4
+pandas
+scikit-learn==1.3.2
+matplotlib
+seaborn
+streamlit
+shap==0.45.0
+scapy
+pyarrow
+joblib
+xgboost==1.7.6
