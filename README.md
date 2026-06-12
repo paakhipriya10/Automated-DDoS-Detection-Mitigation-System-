@@ -1,20 +1,20 @@
-# 🚨 AI-Driven DDoS Detection System with Explainable AI (XAI)
+## AI-Driven DDoS Detection System with Explainable AI (XAI)
 
 An advanced, end-to-end Machine Learning pipeline designed to detect, explain, and simulate responses to Distributed Denial of Service (DDoS) attacks. 
 
 This project goes beyond simple classification by utilizing a **Hybrid Ensemble Model** (combining Deep Learning and Traditional ML) and solving the "Black Box" problem of AI using **SHAP (SHapley Additive exPlanations)** to provide transparent, human-readable reasons for every security block.
 
-## ✨ Key Features
+## Key Features
 
-* **🧠 Hybrid AI Engine:** Combines the sequential pattern recognition of **LSTM (TensorFlow/Keras)** with the lightning-fast tabular classification of **XGBoost** to achieve highly accurate threat detection.
-* **🔍 Explainable AI (XAI):** Utilizes SHAP to generate visual waterfall and bar plots, explaining exactly *which* network features (e.g., Packet Size, Flow Duration) triggered an alert.
-* **🛡️ Automated Response Simulation:** Translates AI confidence scores into actionable security measures (e.g., Rate Limiting, IP Flagging) ready to be digested by a firewall.
-* **📊 Interactive Dashboard:** A sleek, real-time user interface built with **Streamlit** for security analysts to monitor traffic, view AI confidence scores, and analyze SHAP visualizations.
-* **⛓️ Blockchain Logging:** Logs detection events and responses to a blockchain for immutable audit trails.
-* **🔬 Simulation & Testing:** Includes tools for simulating DDoS attacks and testing the detection system.
-* **🤖 Hardware Integration:** Arduino code for potential hardware-based monitoring or response.
+* **Hybrid AI Engine:** Combines the sequential pattern recognition of **LSTM (TensorFlow/Keras)** with the lightning-fast tabular classification of **XGBoost** to achieve highly accurate threat detection.
+* **Explainable AI (XAI):** Utilizes SHAP to generate visual waterfall and bar plots, explaining exactly *which* network features (e.g., Packet Size, Flow Duration) triggered an alert.
+* **Automated Response Simulation:** Translates AI confidence scores into actionable security measures (e.g., Rate Limiting, IP Flagging) ready to be digested by a firewall.
+* **Interactive Dashboard:** A sleek, real-time user interface built with **Streamlit** for security analysts to monitor traffic, view AI confidence scores, and analyze SHAP visualizations.
+* **Blockchain Logging:** Logs detection events and responses to a blockchain for immutable audit trails.
+* **Simulation & Testing:** Includes tools for simulating DDoS attacks and testing the detection system.
+* **Hardware Integration:** Arduino code for potential hardware-based monitoring or response.
 
-## 📂 Project Architecture
+## Project Architecture
 
 ```text
 ├── dataset/
@@ -42,7 +42,7 @@ This project goes beyond simple classification by utilizing a **Hybrid Ensemble 
 └── README.md                 # Project documentation
 ```
 
-## 🛠️ Technologies Used
+## Technologies Used
 Data Processing: Python, Pandas, NumPy, Scikit-Learn
 
 Machine Learning: XGBoost, TensorFlow (Keras)
@@ -55,7 +55,7 @@ Blockchain: Custom logging implementation
 
 Hardware: Arduino
 
-## 🚀 Getting Started
+## Getting Started
 1. Clone the Repository
    ```bash
    git clone https://github.com/yourusername/ddos-hybrid-detector.git
@@ -87,11 +87,11 @@ Hardware: Arduino
      python src/test_simulator.py
      ```
 
-## 🧠 How the Hybrid Model Works
+## How the Hybrid Model Works
 The core detection logic (src/hybrid_detector.py) takes a live sample of network traffic and feeds it to both the LSTM and XGBoost models. A weighted average is applied to their probability outputs (e.g., 60% XGBoost, 40% LSTM). If the final hybrid score exceeds 0.5 (50%), the traffic is flagged as a DDoS attack, triggering the SHAP explainer and the response simulator.
 
-## 🔗 Blockchain Integration
+## Blockchain Integration
 Detection events are logged to `blockchain_log.json` using `blockchain_log.py` for immutable records.
 
-## 📈 Simulation and Testing
+## Simulation and Testing
 Use `src/test_simulator.py` to simulate DDoS scenarios and evaluate the system's performance. Results are saved to `simulation_results.csv`.
