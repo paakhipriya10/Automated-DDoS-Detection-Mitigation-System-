@@ -95,3 +95,29 @@ Detection events are logged to `blockchain_log.json` using `blockchain_log.py` f
 
 ## Simulation and Testing
 Use `src/test_simulator.py` to simulate DDoS scenarios and evaluate the system's performance. Results are saved to `simulation_results.csv`.
+
+## Output Screenshots
+
+### 1. Prediction and Explanation Dashboard
+
+![Prediction and Explanation Dashboard](screenshots/img1.png)
+
+*Dashboard displaying attack predictions, confidence scores, and AI-generated explanations for detected network traffic.*
+
+---
+
+### 2. SHAP Values Dashboard
+
+![SHAP Values Dashboard](screenshots/img2.png)
+
+*Interactive SHAP visualizations highlighting the most influential features contributing to each DDoS detection decision.*
+
+---
+
+### 3. Blockchain Log Dashboard
+
+![Blockchain Log Dashboard](screenshots/img3.png)
+
+*Immutable blockchain-based audit log showing recorded detection events, timestamps, and simulated mitigation actions.*
+
+---
