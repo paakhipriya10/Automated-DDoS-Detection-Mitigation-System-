@@ -98,7 +98,7 @@ Use `src/test_simulator.py` to simulate DDoS scenarios and evaluate the system's
 
 ## Output Screenshots
 
-### 1. Prediction and Explanation Dashboard
+### 1. Prediction and Explanation on Dashboard
 
 ![Prediction and Explanation Dashboard](screenshots/img1.png)
 
@@ -106,7 +106,7 @@ Use `src/test_simulator.py` to simulate DDoS scenarios and evaluate the system's
 
 ---
 
-### 2. SHAP Values Dashboard
+### 2. SHAP Values on Dashboard
 
 ![SHAP Values Dashboard](screenshots/img2.png)
 
@@ -114,7 +114,7 @@ Use `src/test_simulator.py` to simulate DDoS scenarios and evaluate the system's
 
 ---
 
-### 3. Blockchain Log Dashboard
+### 3. Blockchain Log on Dashboard
 
 ![Blockchain Log Dashboard](screenshots/img3.png)
 
